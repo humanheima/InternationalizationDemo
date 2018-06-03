@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ระหว่างประเทศ</string>
+    <string name="travel">การเดินทาง</string>
+    <string name="change_language">เปลี่ยนภาษา</string>
+    <string name="chinese">ชาวจีน</string>
+    <string name="english">อังกฤษ</string>
+    <string name="thailand">ประเทศไทย</string>
+</resources>
