@@ -19,6 +19,10 @@ public class LanguageUtil {
 
     private static final String TAG = "LanguageUtil";
 
+    /**
+     * @param context
+     * @param newLanguage 想要切换的语言类型 比如 "en" ,"zh"
+     */
     @SuppressWarnings("deprecation")
     public static void changeAppLanguage(Context context, String newLanguage) {
         if (TextUtils.isEmpty(newLanguage)) {
@@ -26,7 +30,7 @@ public class LanguageUtil {
         }
         Resources resources = context.getResources();
         Configuration configuration = resources.getConfiguration();
-        // app locale
+        //获取想要切换的语言类型
         Locale locale = getLocaleByLanguage(newLanguage);
         configuration.setLocale(locale);
         // updateConfiguration
@@ -48,7 +52,7 @@ public class LanguageUtil {
     }
 
     public static Context attachBaseContext(Context context, String language) {
-        Log.d(TAG, "attachBaseContext: "+Build.VERSION.SDK_INT);
+        Log.d(TAG, "attachBaseContext: " + Build.VERSION.SDK_INT);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             return updateResources(context, language);
         } else {

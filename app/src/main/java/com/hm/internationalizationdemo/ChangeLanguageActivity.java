@@ -30,12 +30,15 @@ public class ChangeLanguageActivity extends BaseActivity {
         String language = null;
         switch (view.getId()) {
             case R.id.btn_chinese:
+                //切换为简体中文
                 language = LanguageType.CHINESE.getLanguage();
                 break;
             case R.id.btn_english:
+                //切换为英语
                 language = LanguageType.ENGLISH.getLanguage();
                 break;
             case R.id.btn_thailand:
+                //切换为泰语
                 language = LanguageType.THAILAND.getLanguage();
                 break;
             default:
@@ -45,6 +48,12 @@ public class ChangeLanguageActivity extends BaseActivity {
         changeLanguage(language);
     }
 
+    /**
+     * 如果是7.0以下，我们需要调用changeAppLanguage方法，
+     * 如果是7.0及以上系统，直接把我们想要切换的语言类型保存在SharedPreferences中即可
+     * 然后重新启动MainActivity
+     * @param language
+     */
     private void changeLanguage(String language) {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
             LanguageUtil.changeAppLanguage(App.getContext(), language);
