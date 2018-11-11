@@ -3,6 +3,7 @@
     <string name="app_name">international</string>
     <string name="travel">travel</string>
     <string name="change_language">change language</string>
+    <string name="auto_set_text_size">auto set text size</string>
     <string name="chinese">chinese</string>
     <string name="english">english</string>
     <string name="thailand">thailand</string>

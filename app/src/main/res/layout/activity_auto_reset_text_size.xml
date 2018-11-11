@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AutoResetTextSizeActivity">
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:gravity="center"
+            android:text="The Support Library 26.0 provides full support to the autosizing TextView feature on devices running Android versions prior to Android 8.0 (API level 26). The library provides support to Android 4.0 (API level 14) and higher. The android.support.v4.widget package contains the TextViewCompat class to access features in a backward-compatible fashion."
+            android:textAllCaps="false"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizePresetSizes="@array/autosize_text_sizes"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_change_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="change text"
+            android:textAllCaps="false"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizePresetSizes="@array/autosize_text_sizes"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_description" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

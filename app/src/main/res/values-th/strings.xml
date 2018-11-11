@@ -3,6 +3,7 @@
     <string name="app_name">ระหว่างประเทศ</string>
     <string name="travel">การเดินทาง</string>
     <string name="change_language">เปลี่ยนภาษา</string>
+    <string name="auto_set_text_size">ตั้งขนาดข้อความอัตโนมัติ</string>
     <string name="chinese">ชาวจีน</string>
     <string name="english">อังกฤษ</string>
     <string name="thailand">ประเทศไทย</string>

@@ -16,7 +16,7 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         ActionBar actionBar = getSupportActionBar();
-        if(actionBar != null) {
+        if (actionBar != null) {
             actionBar.setTitle(R.string.app_name);
         }
     }
@@ -25,6 +25,9 @@ public class MainActivity extends BaseActivity {
         switch (view.getId()) {
             case R.id.btn_change_language:
                 ChangeLanguageActivity.launch(this);
+                break;
+            case R.id.btn_auto_set_text_size:
+                AutoResetTextSizeActivity.launch(this);
                 break;
             default:
                 break;

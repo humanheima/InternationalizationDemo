@@ -17,7 +17,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ChangeLanguageActivity"/>
+        <activity android:name=".ChangeLanguageActivity" />
+        <activity android:name=".AutoResetTextSizeActivity"></activity>
     </application>
 
 </manifest>

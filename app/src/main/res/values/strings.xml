@@ -2,6 +2,7 @@
     <string name="app_name">国际化</string>
     <string name="travel">旅行</string>
     <string name="change_language">改变语言</string>
+    <string name="auto_set_text_size">自适应字体大小</string>
     <string name="chinese">中文</string>
     <string name="english">英语</string>
     <string name="thailand">泰语</string>
