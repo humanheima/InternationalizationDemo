@@ -46,6 +46,8 @@ public class LanguageUtil {
             locale = Locale.ENGLISH;
         } else if (language.equals(LanguageType.THAILAND.getLanguage())) {
             locale = Locale.forLanguageTag(language);
+        }else if (language.equals("zh-rTW")){
+            locale = Locale.TAIWAN;
         }
         Log.d(TAG, "getLocaleByLanguage: " + locale.getDisplayName());
         return locale;

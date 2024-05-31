@@ -5,9 +5,10 @@ package com.hm.internationalizationdemo;
  */
 public enum LanguageType {
 
-    CHINESE("ch"),
+    CHINESE("zh-rCN"),
     ENGLISH("en"),
-    THAILAND("th");
+    THAILAND("th"),
+    TRANSLATE_CHINESE("zh-rTW");
 
     private String language;
 

@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
 import android.view.View;
 
 public class ChangeLanguageActivity extends BaseActivity {
@@ -20,10 +19,6 @@ public class ChangeLanguageActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_change_language);
-        ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) {
-            actionBar.setTitle(R.string.app_name);
-        }
     }
 
     public void onClick(View view) {
@@ -41,6 +36,10 @@ public class ChangeLanguageActivity extends BaseActivity {
                 //切换为泰语
                 language = LanguageType.THAILAND.getLanguage();
                 break;
+            case R.id.btn_chinese_tradition:
+                //切换为泰语
+                language = LanguageType.TRANSLATE_CHINESE.getLanguage();
+                break;
             default:
                 break;
 
@@ -52,6 +51,7 @@ public class ChangeLanguageActivity extends BaseActivity {
      * 如果是7.0以下，我们需要调用changeAppLanguage方法，
      * 如果是7.0及以上系统，直接把我们想要切换的语言类型保存在SharedPreferences中即可
      * 然后重新启动MainActivity
+     *
      * @param language
      */
     private void changeLanguage(String language) {

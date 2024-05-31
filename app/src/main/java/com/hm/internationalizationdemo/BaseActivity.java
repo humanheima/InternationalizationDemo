@@ -1,10 +1,7 @@
 package com.hm.internationalizationdemo;
 
 import android.content.Context;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * Created by dumingwei on 2018/6/3 0003.
@@ -13,6 +10,7 @@ public class BaseActivity extends AppCompatActivity {
 
     /**
      * 此方法先于 onCreate()方法执行
+     *
      * @param newBase
      */
     @Override
